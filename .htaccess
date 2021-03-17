@@ -1,0 +1,96 @@
+RewriteEngine on
+RewriteCond %{HTTP_HOST} !^www\.pvpler\.net
+RewriteRule (.*) http://www.pvpler.net/$1 [R=301,L]
+RewriteRule ^yonetim/uyeduzenle/([0-9a-zA-Z-_]+)(/?)$ tema/yonetim/yonetimuyeduzenle.php?cerez=$1 [L,NC]  
+RewriteRule ^yonetim/serverduzenle/([0-9a-zA-Z-_]+)(/?)$ tema/yonetim/yonetimserverduzenle.php?serverurl=$1 [L,NC]  
+ReWriteRule ^yonetim/sifirla(/?)$ tema/yonetim/yonetimsifirla.php [L,NC] 
+ReWriteRule ^yonetim/iletisim(/?)$ tema/yonetim/yonetimiletisim.php [L,NC] 
+ReWriteRule ^yonetim/blogyaziekle(/?)$ tema/yonetim/yonetimblogekle.php [L,NC] 
+ReWriteRule ^yonetim/reklam(/?)$ tema/yonetim/yonetimreklam.php [L,NC] 
+ReWriteRule ^yonetim/uye(/?)$ tema/yonetim/uye.php [L,NC] 
+ReWriteRule ^yonetim(/?)$ tema/yonetim/yonetim.php [L,NC]
+ReWriteRule ^iletisim(/?)$ tema/sayfalar/iletisim.php [L,NC] 
+ReWriteRule ^serverekle(/?)$ tema/kullanici/serverekle.php [L,NC] 
+ReWriteRule ^kullanici/cikisyap(/?)$ tema/kullanici/cikis.php [L,NC] 
+ReWriteRule ^kullanici/uyegiris(/?)$ tema/kullanici/uyegiris.php [L,NC] 
+ReWriteRule ^kullanici/uyeol(/?)$ tema/kullanici/uyeol.php [L,NC] 
+RewriteRule ^blog/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/blog.php?sayfa=$1 [L,NC] 
+RewriteRule ^blog/s(/?)$ tema/sayfalar/blog.php?sayfa=$1 [L,NC] 
+ReWriteRule ^blog(/?)$ tema/sayfalar/blog.php [L,NC] 
+RewriteRule ^blog/([0-9a-zA-Z-_]+)(/?)$ tema/detay/blogdetay.php?url=$1 [L,NC]  
+RewriteRule ^cs/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/cs.php?sayfa=$1 [L,NC] 
+RewriteRule ^cs/s(/?)$ tema/sayfalar/cs.php?sayfa=$1 [L,NC] 
+ReWriteRule ^cs(/?)$ tema/sayfalar/cs.php [L,NC] 
+RewriteRule ^3doyunlar/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/3doyunlar.php?sayfa=$1 [L,NC] 
+RewriteRule ^3doyunlar/s(/?)$ tema/sayfalar/3doyunlar.php?sayfa=$1 [L,NC] 
+ReWriteRule ^3doyunlar(/?)$ tema/sayfalar/3doyunlar.php [L,NC] 
+RewriteRule ^wow/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/wow.php?sayfa=$1 [L,NC] 
+RewriteRule ^wow/s(/?)$ tema/sayfalar/wow.php?sayfa=$1 [L,NC] 
+ReWriteRule ^wow(/?)$ tema/sayfalar/wow.php [L,NC] 
+RewriteRule ^agario/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/agario.php?sayfa=$1 [L,NC] 
+RewriteRule ^agario/s(/?)$ tema/sayfalar/agario.php?sayfa=$1 [L,NC] 
+ReWriteRule ^agario(/?)$ tema/sayfalar/agario.php [L,NC] 
+RewriteRule ^bombom/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/bombom.php?sayfa=$1 [L,NC] 
+RewriteRule ^bombom/s(/?)$ tema/sayfalar/bombom.php?sayfa=$1 [L,NC] 
+ReWriteRule ^bombom(/?)$ tema/sayfalar/bombom.php [L,NC] 
+RewriteRule ^transformice/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/transformice.php?sayfa=$1 [L,NC] 
+RewriteRule ^transformice/s(/?)$ tema/sayfalar/transformice.php?sayfa=$1 [L,NC] 
+ReWriteRule ^transformice(/?)$ tema/sayfalar/transformice.php [L,NC] 
+RewriteRule ^minecraft/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/minecraft.php?sayfa=$1 [L,NC] 
+RewriteRule ^minecraft/s(/?)$ tema/sayfalar/minecraft.php?sayfa=$1 [L,NC] 
+ReWriteRule ^minecraft(/?)$ tema/sayfalar/minecraft.php [L,NC] 
+RewriteRule ^silkroad/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/silkroad.php?sayfa=$1 [L,NC] 
+RewriteRule ^silkroad/s(/?)$ tema/sayfalar/silkroad.php?sayfa=$1 [L,NC] 
+ReWriteRule ^silkroad(/?)$ tema/sayfalar/silkroad.php [L,NC] 
+RewriteRule ^knight/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/knight.php?sayfa=$1 [L,NC] 
+RewriteRule ^knight/s(/?)$ tema/sayfalar/knight.php?sayfa=$1 [L,NC] 
+ReWriteRule ^knight(/?)$ tema/sayfalar/knight.php [L,NC] 
+RewriteRule ^metin2-pvp-serverler/s/([0-9a-zA-Z-_]+)(/?)$ tema/sayfalar/metin2.php?sayfa=$1 [L,NC] 
+RewriteRule ^metin2-pvp-serverler/s(/?)$ tema/sayfalar/metin2.php?sayfa=$1 [L,NC] 
+ReWriteRule ^metin2-pvp-serverler(/?)$ tema/sayfalar/metin2.php [L,NC] 
+ReWriteRule ^sitemap.xml(/?)$ tema/sitemap/sitemap.xml [L,NC] 
+RewriteRule ^([0-9a-zA-Z-_]+)/([0-9a-zA-Z-_]+)(/?)$ tema/detay/detay.php?serverkategori=$1&serverurl=$2 [L,NC]
+RewriteRule ^hata$ tema/sayfalar/hata.php [L,NC]
+
+Redirect 301 /metin2 /metin2-pvp-serverler
+
+ErrorDocument 404 https://www.pvpler.net/hata
+
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteRule ^.*$ https://%{SERVER_NAME}%{REQUEST_URI} [R=301,L]
+
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html
+  AddOutputFilterByType DEFLATE text/css
+  AddOutputFilterByType DEFLATE text/javascript
+  AddOutputFilterByType DEFLATE text/xml
+  AddOutputFilterByType DEFLATE text/plain
+  AddOutputFilterByType DEFLATE image/x-icon
+  AddOutputFilterByType DEFLATE image/svg+xml
+  AddOutputFilterByType DEFLATE application/rss+xml
+  AddOutputFilterByType DEFLATE application/javascript
+  AddOutputFilterByType DEFLATE application/x-javascript
+  AddOutputFilterByType DEFLATE application/xml
+  AddOutputFilterByType DEFLATE application/xhtml+xml
+  AddOutputFilterByType DEFLATE application/x-font  
+  AddOutputFilterByType DEFLATE application/x-font-truetype  
+  AddOutputFilterByType DEFLATE application/x-font-ttf  
+  AddOutputFilterByType DEFLATE application/x-font-otf
+  AddOutputFilterByType DEFLATE application/x-font-opentype
+  AddOutputFilterByType DEFLATE application/vnd.ms-fontobject
+  AddOutputFilterByType DEFLATE font/ttf
+  AddOutputFilterByType DEFLATE font/otf
+  AddOutputFilterByType DEFLATE font/opentype
+# For Older Browsers Which Can't Handle Compression
+  BrowserMatch ^Mozilla/4 gzip-only-text/html
+  BrowserMatch ^Mozilla/4\.0[678] no-gzip
+  BrowserMatch \bMSIE !no-gzip !gzip-only-text/html
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php71” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php71 .php .php7 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

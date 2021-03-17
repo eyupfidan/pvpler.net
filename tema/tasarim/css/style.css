@@ -1,0 +1,188 @@
+body {
+	font-family: 'Ubuntu', Arial, sans-serif;
+	background: #242424 url(../images/arka.png) repeat;
+	color: #ccc;
+}
+a {
+	color: #FF6600;
+}
+a:hover{
+	color: #fff;
+	text-decoration:none;
+}
+#top-header {
+ 	background-color: rgba(38, 37, 39, 0.45);
+ 	border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+.header-social-btn{
+	color:gray;
+}
+.header-social-btn:hover{
+	color:white;
+}
+#nav1{
+	background: url(../images/seffaf.png) repeat;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3),inset 0 10px 10px rgba(255,255,255,.1);
+	border:1px solid rgba(0,0,0,.4);
+	padding:7px 0;
+	border-radius:5px;
+}
+#navbar1{
+	background: url(../images/nav-tail.png) repeat-x 0 0;	box-shadow: inset 0 1px 0 rgba(255,255,255,.3),inset 0 10px 10px rgba(255,255,255,.1);
+	text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+	border-radius:5px;
+	
+}
+#navbar1 ul li a{
+	color:#FFF;
+	border-bottom: 4px solid rgba(0, 0, 0, 0);
+}
+#navbar1 ul li a:hover{
+	border-bottom: 4px solid #FFC600;
+}
+
+.panel-black{
+	border: 1px solid rgba(0,0,0,.8);
+	border-radius: 5px;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3),inset 0 10px 10px rgba(255,255,255,.1);
+	background: url(../images/seffaf.png) repeat;
+}
+.panel-black .panel-heading{
+	padding:0;
+	margin: 10px 15px;
+	margin-bottom: 0;
+	border-bottom: solid 1px #373737;
+	
+}
+.panel-black .panel-title{
+	color:#FFF;
+	padding-bottom:10px;
+	font-weight: 400 !important;
+}
+.panel-black .panel-body .info-bar{
+	color: #CCC;
+    border: 1px solid rgba(6,6,6,.5);
+    background: rgba(0,0,0,.2);
+}
+.table-server-list{
+	border:1px solid #373737;
+	box-shadow: inset 0 1px 0 rgba(255,255,255,.3),inset 0 10px 10px rgba(255,255,255,.1);
+	border-radius:5px;
+}
+.table-server-list thead th{
+	background: rgba(236,133,0,.5);
+	text-shadow: 0 -1px 0 rgba(0,0,0,.8);
+	border:0 !important;
+}
+.table-server-list tbody td, .table-server-list tbody th{
+	border-top:0 !important;
+}
+.table-server-list tbody td a{
+	color:#ccc;
+}
+.table-server-list tbody td a:hover{
+	color:#fff;
+	text-decoration:none;
+}
+.table-server-list tbody tr{
+	color:#CCCCCC;
+	-webkit-transition: background-color 0.3s;
+}
+.table-server-list tbody tr:nth-child(even) {
+   	background:rgba(0,0,0,0.3);
+}
+.table-server-list tbody tr:hover{
+	background:rgba(236,133,0,0.2);
+}
+.panel-list{
+	padding-left:0px;
+	list-style: square url(../images/list-style.png);
+    list-style-position: inside;
+}
+.panel-list.unstyled{
+	padding-left:0px;
+	list-style: none;
+}
+.panel-list li{
+	padding: 6px;
+	margin-bottom:4px;
+	background: url(../images/seffaf.png) repeat;
+}
+.panel-list li .count{
+	color:#FF6600;
+}
+.panel-list li a{
+	color:#ccc;
+}
+.panel-list li a:hover{
+	color:#FF6600;
+	text-decoration:none;
+}
+
+.input-black{
+	font-size: 12px;
+    padding: 4px 5px;
+    background: #000;
+    border: 1px solid #333;
+    color: #a8a8a8;
+}
+.input-black:focus  {
+	box-shadow: inset 0 0 2px #000;
+	background: #282828;
+	border-color:#ffa200;outline: none;
+}
+
+.btn-orange{
+	border: 1px solid rgba(0,0,0,0.4);
+	box-shadow:inset 0 1px 0 rgba(255,255,255,0.3),inset 0 10px 10px rgba(255,255,255,0.1);
+	background-color: #ffa200;
+	cursor:pointer;
+	color:#fff;
+	text-shadow: 0 -1px 0 rgba(0,0,0,0.8);
+}
+
+.btn-orange:hover{
+	border: 1px solid rgba(0,0,0,0.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); 
+	background-color:#da6c00;
+	color:#fff;
+}
+
+li.active .btn-orange{
+	border: 1px solid rgba(0,0,0,0.4);
+	box-shadow: inset 0 1px 0 rgba(255,255,255,0.6); 
+	background-color:#da6c00;
+	color:#fff;
+}
+
+.btn-black {
+    border: 1px solid rgba(6,6,6,.5);
+    background: rgba(0,0,0,.4);
+    color: #fff;
+    -webkit-transition: background-color .3s;
+    text-shadow: 1px 1px #1b3242;
+}
+.btn-black:hover{
+    border: 1px solid rgba(6,6,6,.5);
+    background: rgba(236,133,0,.5);
+    color: #fff;
+    -webkit-transition: background-color .3s;
+    text-shadow: 1px 1px #1b3242;
+}
+.color-orange{
+	color: #F60;
+}
+
+#serverArticle *, #serverArticle > *, #serverArticle img, #blogArticle img{
+	max-width:100% !important;
+	height: auto !important;
+}
+
+
+#serverArticle *, #serverArticle > *, #serverArticle a{
+	word-wrap: break-word !important;
+}
+.table-responsive{
+	border: 0 !important;
+	border-width: 0 İmportant;
+}
