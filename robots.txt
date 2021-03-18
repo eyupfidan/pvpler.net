@@ -1,4 +1,3 @@
 User-Agent: *
 Allow: /
 
-Sitemap: https://www.pvpler.net/sitemap.xml
